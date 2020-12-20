@@ -19,7 +19,6 @@ public class Scaler : MonoBehaviour
     {
         scale();
         rotate();
-        jump();
     }
 
     void clamp(ref float val, int min, int max)
@@ -48,10 +47,4 @@ public class Scaler : MonoBehaviour
         transform.Rotate(rotation);
     }
 
-    void jump()
-    {
-        float horizontal = Input.GetAxis("Horizontal");
-        Debug.Log(horizontal);
-
-    }
 }
